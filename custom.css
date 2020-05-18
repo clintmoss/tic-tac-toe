@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.board {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.board div {
+  display: flex;
+  flex-direction:row;
+  justify-items: stretch;
+  min-width: 30%;
+  flex-grow: 3;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0;
+}
+
+
+.board div span {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.middle-row {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.first-column {
+  border-right: 3px solid black;
+
+}
+
+.third-column {
+  border-left: 3px solid black;
+}
