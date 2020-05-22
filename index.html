@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" href="custom.css">
-  <link type="script" href="index.js"
 </head>
 <body>
 <h1>Tic Tac Toe</h1> 
-<div class="board">
-  <div class="first-column">
-    <span>1</span>
+<section class="board">
+  <div class="first-column" id="block-1">
+    <span></span>
+  </div>
+  <div id="block-2">
+    <span></span>
+  </div>
+  <div class="third-column" id="block-3">
+    <span></span>
+  </div>
+  <div class="middle-row first-column" id="block-4">
+    <span></span>
+  </div>
+  <div class="middle-row" id="block-5">
+    <span></span>
+  </div>
+  <div class="middle-row third-column" id="block-6">
+    <span></span>
+  </div>
+  <div class="first-column" id="block-7">
+    <span></span>
+  </div>
+  <div id="block-8">
+    <span></span>
+  </div>
+  <div class="third-column" id="block-9">
+    <span></span>
+  </div>
+</section>
+<div class="inline-scores"> 
+  <h2>Player Scores</h2>
+  <p class="player-1">(X) Player 1: <span id="player1">2</span></p>
+  <p class="player-2">(O) Player 2: <span id="player2">3</span></p>
   </div>
   <div>
-    <span>2</span>
+    <button id="play-again">Play Again</button>
   </div>
-  <div class="third-column">
-    <span>3</span>
-  </div>
-  <div class="middle-row first-column">
-    <span>4</span>
-  </div>
-  <div class="middle-row">
-    <span>5</span>
-  </div>
-  <div class="middle-row third-column">
-    <span>6</span>
-  </div>
-  <div class="first-column">
-    <span>7</span>
-  </div>
-  <div>
-    <span>8</span>
-  </div>
-  <div class="third-column">
-    <span>9</span>
-  </div>
-</div>
+  <script type="text/javascript" src="index.js"></script>
   </body>
