@@ -65,3 +65,12 @@ h1 {
 .player-2 {
   color: red;
 }
+
+#play-again {
+  color: black;
+  background: white;
+  border: 1px black solid;
+  padding: 7px;
+  border-radius: 5px;
+  user-select: none;
+}

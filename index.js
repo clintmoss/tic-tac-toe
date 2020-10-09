@@ -23,7 +23,7 @@ reset.addEventListener("click", function (){
 
 const changeTurn = (currentSign) => {
 if(currentSign == "X"){
-  mark = "O";
+  mark = "O"
 } else if (currentSign == "O"){
   mark = "X"
 }
@@ -32,38 +32,38 @@ threeInARow()
 
 const threeInARow = () => {
   weHaveAWinner(false)
-  if(block[0].mark == block[1].mark && block[2].mark == block[1].mark){
+  if(block[0].mark == block[1].mark && block[2].mark == block[1].mark && block[0].mark == block[1].mark){
     if(block[0].used == true && block[1].used == true && block[2].used == true){
     weHaveAWinner(true)
     }
-  } else if (block[0].mark == block[3].mark && block[3].mark == block[6].mark){
+  } else if (block[0].mark == block[3].mark && block[3].mark == block[6].mark && block[0].mark == block[6].mark){
     if(block[0].used == true && block[3].used == true && block[6].used == true){
       weHaveAWinner(true)
       }
-  } else if (block[0].mark == block[4].mark && block[4].mark == block[8].mark){
+  } else if (block[0].mark == block[4].mark && block[4].mark == block[8].mark && block[0].mark == block[8].mark){
     if(block[0].used == true && block[4].used == true && block[8].used == true){
       weHaveAWinner(true)
       }
-  } else if (block[2].mark == block[4].mark && block[4].mark == block[6].mark){
+  } else if (block[2].mark == block[4].mark && block[4].mark == block[6].mark && block[2].mark == block[6].mark){
     if(block[2].used == true && block[4].used == true && block[6].used == true){
       weHaveAWinner(true)
       }
-  } else if (block[3].mark == block[4].mark && block[4].mark == block[5].mark){
+  } else if (block[3].mark == block[4].mark && block[4].mark == block[5].mark && block[3].mark == block[5].mark){
     if(block[3].used == true && block[4].used == true && block[5].used == true){
       weHaveAWinner(true)
       }
-  } else if (block[6].mark == block[7].mark && block[7].mark == block[8].mark){
+  } else if (block[6].mark == block[7].mark && block[7].mark == block[8].mark && block[6].mark == block[8].mark){
     if(block[6].used == true && block[7].used == true && block[8].used == true){
       weHaveAWinner(true)
       }
-  } else if (block[1].mark == block[4].mark && block[4].mark == block[7].mark){
+  } else if (block[1].mark == block[4].mark && block[4].mark == block[7].mark && block[1].mark == block[7].mark){
     if(block[1].used == true && block[4].used == true && block[7].used == true){
       weHaveAWinner(true)
       }
-  } else if (block[2].mark == block[5].mark && block[5].mark == block[8].mark){
-    if(block[2].used == true && block[5].used == true){
+  } else if (block[2].mark == block[5].mark && block[5].mark == block[8].mark && block[2].mark == block[8].mark){
+    if(block[2].used == true && block[5].used == true && block[8].used == true){
       weHaveAWinner(true)
-      }
+      } 
   } else {
     weHaveAWinner(false)
   }
@@ -242,8 +242,6 @@ else {
   console.log('already clicked ')
 }
 })
-
-
 
 
 //function to see if they have three in a row
