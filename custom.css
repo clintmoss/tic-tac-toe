@@ -1,3 +1,11 @@
+:root {
+  --blue: #2d4059;
+  --red: #ea5455;
+  --tan: #decdc3;
+  --grey: #e5e5e5;
+
+}
+
 body {
   width: 100%;
 }
@@ -5,6 +13,11 @@ body {
 h1 {
   text-align: center;
   padding-bottom: 20px;
+  color: var(--red);
+}
+
+h2 {
+  color: var(--blue);
 }
 
 .board {
@@ -36,17 +49,21 @@ h1 {
 }
 
 .middle-row {
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 5px solid var(--grey);
+  border-bottom: 5px solid var(--grey);
 }
 
 .first-column {
-  border-right: 5px solid black;
+  border-right: 5px solid var(--grey);
 
 }
 
 .third-column {
-  border-left: 5px solid black;
+  border-left: 5px solid var(--grey);
+}
+
+div > .inline-scores {
+  width:100%;
 }
 
 .inline-scores {
@@ -56,20 +73,23 @@ h1 {
   align-items: baseline;
   width: 80%;
   justify-content: space-around;
+  background-color: var(--tan);
+  margin-top: 1%;
+  padding: 0, 0, 1%,0;
 }
 
 .player-1 {
-  color: blue;
+  color: var(--blue);
 }
 
 .player-2 {
-  color: red;
+  color: var(--red);
 }
 
 #play-again {
-  color: black;
-  background: white;
-  border: 1px black solid;
+  color: white;
+  background: var(--blue);
+  border: 1px white solid;
   padding: 7px;
   border-radius: 5px;
   user-select: none;
